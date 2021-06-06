@@ -46,7 +46,6 @@ public class PaymentService {
 		//using ModelMapper class to bind BO to DTO
 		ModelMapper modelMapper = new ModelMapper();
 		PaymentDTO paymentDTO = modelMapper.map(paymentBo, PaymentDTO.class);
-		paymentDTO.setTotalAmount(5444333222.88);
 		return paymentDTO;
 	}
 
